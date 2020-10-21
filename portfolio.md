@@ -4,7 +4,7 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-Here are the project that I did during my years at TAR UC.
+Here are the projects that I did during my years at TAR UC.
 
 ### Project:CyberSec Entrance Challenge
 
