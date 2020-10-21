@@ -8,7 +8,7 @@ Here are the projects that I did during my years at TAR UC.
 
 ### Project:CyberSec Entrance Challenge
 
-An easy entrance challenge to let all Project:CyberSec member get a feel on what mindset and possible skillset is needed in the Cybersecurity field.
+An easy entrance challenge to let all Project:CyberSec members get a feel on what mindset and possible skillset is needed in the Cybersecurity field.
 
 ![Project:CyberSec Entrance]({{ site.baseurl }}/images/entrance.PNG "Project:CyberSec Entrance"){: .imgborder}
 
@@ -35,7 +35,7 @@ URL : Site has been shut down.
 ----
 ### Coinbot
 
-A Discord bot that give you a one-line fortune when you "toss" a coin into its fountain. Currently has more than 800 fortunes stored.
+A Discord bot that gives you a one-line fortune when you "toss" a coin into its fountain. Currently has more than 800 fortunes stored.
 
 ![Coinbot]({{ site.baseurl }}/images/coinbot.PNG "Coinbot")
 
