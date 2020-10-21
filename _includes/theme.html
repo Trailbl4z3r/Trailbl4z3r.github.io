@@ -1,0 +1,83 @@
+<!-- Special thanks to https://derekkedziora.com/blog/dark-mode-revisited -->
+
+<script>
+let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
+let theme = sessionStorage.getItem('theme');
+
+if (systemInitiatedDark.matches) {
+	document.getElementById("theme-toggle").innerHTML = "Theme: 1337 (Click Me!)";
+	document.getElementById("logoa").src = "/images/logo2.png";
+} else {
+	document.getElementById("theme-toggle").innerHTML = "Theme: Burning Eyes (Click Me!)";
+	document.getElementById("logoa").src = "/images/logo.png";
+}
+
+function prefersColorTest(systemInitiatedDark) {
+  if (systemInitiatedDark.matches) {
+  	document.documentElement.setAttribute('data-theme', 'dark');		
+   	document.getElementById("theme-toggle").innerHTML = "Theme: 1337 (Click Me!)";
+	document.getElementById("logoa").src = "/images/logo2.png";
+   	sessionStorage.setItem('theme', '');
+  } else {
+  	document.documentElement.setAttribute('data-theme', 'light');
+    	document.getElementById("theme-toggle").innerHTML = "Theme: Burning Eyes (Click Me!)";
+	document.getElementById("logoa").src = "/images/logo.png";
+    	sessionStorage.setItem('theme', '');
+  }
+}
+systemInitiatedDark.addListener(prefersColorTest);
+
+
+function modeSwitcher() {
+	let theme = sessionStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'light');
+		sessionStorage.setItem('theme', 'light');
+		document.getElementById("theme-toggle").innerHTML = "Theme: Burning Eyes (Click Me!)";
+		document.getElementById("logoa").src = "/images/logo.png";
+		var logob = document.getElementById('logob');
+		if (logob != null) {
+			logob.src = "/images/logo.png";
+		}
+	}	else if (theme === "light") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+		sessionStorage.setItem('theme', 'dark');
+		document.getElementById("theme-toggle").innerHTML = "Theme: 1337 (Click Me!)";
+		document.getElementById("logoa").src = "/images/logo2.png";
+		var logob = document.getElementById('logob');
+		if (logob != null) {
+			logob.src = "/images/logo2.png";
+		}
+	} else if (systemInitiatedDark.matches) {	
+		document.documentElement.setAttribute('data-theme', 'light');
+		sessionStorage.setItem('theme', 'light');
+		document.getElementById("theme-toggle").innerHTML = "Theme: Burning Eyes (Click Me!)";
+		document.getElementById("logoa").src = "/images/logo.png";
+		var logob = document.getElementById('logob');
+		if (logob != null) {
+			logob.src = "/images/logo.png";
+		}
+	} else {
+		document.documentElement.setAttribute('data-theme', 'dark');
+		sessionStorage.setItem('theme', 'dark');
+		document.getElementById("theme-toggle").innerHTML = "Theme: 1337 (Click Me!)";
+		document.getElementById("logoa").src = "/images/logo2.png";
+		var logob = document.getElementById('logob');
+		if (logob != null) {
+			logob.src = "/images/logo2.png";
+		}
+	}
+}
+
+if (theme === "dark") {
+	document.documentElement.setAttribute('data-theme', 'dark');
+	sessionStorage.setItem('theme', 'dark');
+	document.getElementById("theme-toggle").innerHTML = "Theme: 1337 (Click Me!)";
+	document.getElementById("logoa").src = "/images/logo2.png";
+} else if (theme === "light") {
+	document.documentElement.setAttribute('data-theme', 'light');
+	document.getElementById("theme-toggle").innerHTML = "Theme: Burning Eyes (Click Me!)";
+	document.getElementById("logoa").src = "/images/logo.png";
+	sessionStorage.setItem('theme', 'light');
+}
+</script>

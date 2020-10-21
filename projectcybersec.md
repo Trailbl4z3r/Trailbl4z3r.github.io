@@ -47,7 +47,7 @@ Objective : Decode a readable string from the picture.
 
 [Solution](/images/Answer1.png)
 
-### Puzzle 2
+#### Puzzle 2
 
 Objective : Decode the "anoroc_virus" string using the information and function given.
 

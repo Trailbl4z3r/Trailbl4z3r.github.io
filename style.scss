@@ -7,6 +7,12 @@
 
 @import "reset";
 @import "variables";
+
+@font-face {
+    font-family: 'Silkscreen';
+    src: font-files("/_font/slkscr-webfont.woff", "/_font/slkscr-webfont.ttf", "/_font/slkscr-webfont.svg", "/_font/slkscr-webfont.eot");
+}
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -17,10 +23,62 @@ html {
   font-size: 100%;
 }
 
+
+html, html[data-theme="light"] {
+	--white: #fff;
+	--darkGray: #333;
+	--darkerGray: #222;
+	--gray: #666;
+	--blue: #4183C4;
+	--black: #000;
+	--lightGray: #eee;
+	--helvetica: Helvetica, Arial, sans-serif;
+	--helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html[data-theme="dark"] {
+	--white: #000;
+	--darkGray: #0d0;
+	--darkerGray: #0f0;
+	--gray: #0a0;
+	--blue: #ff0;
+	--black: #0f0;
+	--lightGray: #111;
+	--helvetica: 'Silkscreen';
+	--helveticaNeue: 'Silkscreen';
+}
+
+
+@media (prefers-color-scheme: dark) {
+  html[data-theme="dark"] {
+	--white: #000;
+	--darkGray: #0d0;
+	--darkerGray: #0f0;
+	--gray: #0a0;
+	--blue: #ff0;
+	--black: #0f0;
+	--lightGray: #111;
+	--helvetica: 'Silkscreen';
+	--helveticaNeue: 'Silkscreen';
+    }
+
+    html[data-theme="light"] {
+	--white: #fff;
+	--darkGray: #333;
+	--darkerGray: #222;
+	--gray: #666;
+	--blue: #4183C4;
+	--black: #000;
+	--lightGray: #eee;
+	--helvetica: Helvetica, Arial, sans-serif;
+	--helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  background: var(--white);
+  font: 18px/1.4 var(--helvetica);
+  color: var(--darkGray);
 }
 
 .container {
@@ -31,8 +89,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
+  font-family: var(--helveticaNeue);
+  color: var(--darkerGray);
   font-weight: bold;
 
   line-height: 1.7;
@@ -61,7 +119,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: var(--gray);
 }
 
 p {
@@ -69,11 +127,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: var(--blue);
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: var(--blue);
   }
 }
 
@@ -117,17 +175,17 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: var(--gray);
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
+  color: var(--black);
+  background: var(--lightGray);
 }
 ::selection {
-  color: $black;
-  background: $lightGray;
+  color: var(--black);
+  background: var(--lightGray);
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -156,7 +214,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid var(--lightGray);
 
   @include mobile {
     text-align: center;
@@ -192,9 +250,9 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: var(--darkGray);
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: var(--helveticaNeue);
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -202,7 +260,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: var(--gray);
   font-size: 16px;
 
   @include mobile {
@@ -213,7 +271,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: var(--helveticaNeue);
   font-size: 18px;
 
   @include mobile {
@@ -225,14 +283,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: var(--darkGray);
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: var(--blue);
     }
   }
 }
@@ -243,7 +301,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid var(--lightGray);
 }
 
 .posts > .post:last-child {
@@ -254,9 +312,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid var(--gray);
     padding: 0.1em 1em;
-    color: $gray;
+    color: var(--gray);
     font-size: 22px;
     font-style: italic;
   }
@@ -275,7 +333,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: var(--lightGray);
 }
 
 footer {

@@ -1,0 +1,19 @@
+<!-- Special thanks to https://derekkedziora.com/blog/dark-mode-revisited -->
+
+<script>
+
+let theme = sessionStorage.getItem('theme');
+theme = theme === NULL ? theme = 'light';
+
+if (theme === "dark") {
+	document.documentElement.setAttribute('data-theme', 'dark');
+	sessionStorage.setItem('theme', 'dark');
+	document.getElementById("theme-toggle").innerHTML = "Theme: 1337 (Click Me!)";
+	document.getElementById("logoa").src = "/images/logo2.png";
+} else if (theme === "light") {
+	document.documentElement.setAttribute('data-theme', 'light');
+	sessionStorage.setItem('theme', 'light');
+	document.getElementById("theme-toggle").innerHTML = "Theme: Burning Eyes (Click Me!)";
+	document.getElementById("logoa").src = "/images/logo.png";
+}
+</script>
