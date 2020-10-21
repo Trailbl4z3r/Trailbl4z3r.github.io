@@ -10,7 +10,7 @@ permalink: /projectcybersec/
 
 Project:CyberSec is an initiative started in May 2019 by TAR UC FOCS. Its objectives are:
 
-- Find and gather TAR UC students who have skills and interests in Cybersecurity. 
+- Find and gather TAR UC students who have the skills and interests in Cybersecurity. 
 
 - Build a community of like-minded students and a platform to exchange ideas. 
 
@@ -35,7 +35,7 @@ This initiative started from a WhatsApp group, and had held activities such as s
 
 ### Puzzles
 
-Here are two puzzles that are shared by me for recruitment purpose.
+Here are two puzzles that were shared by me for recruitment purpose.
 
 #### Puzzle 1
 
