@@ -30,7 +30,7 @@ A Hall of Fame to record the points obtained by members of TAR UC Interactive Ga
 
 ![IGS HallofFame]({{ site.baseurl }}/images/halloffame.PNG "IGS Hall of Fame")
 
-URL : Site has been shutted down.
+URL : Site has been shut down.
 
 ----
 ### Coinbot
