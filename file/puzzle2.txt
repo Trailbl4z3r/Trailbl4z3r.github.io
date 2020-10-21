@@ -1,0 +1,16 @@
+import java.io.*;  
+
+public class AnarocVirus {
+
+    public static void main(String[] args) {
+        var virus_dna = "ACCCACAUCUCGAUUUCUAAUUAGACCACCCACGAAUGGGCAUAUACUCACAUCAGCAUUUCAAACUAGACUACACACGAGUGGGCCUAC";
+        var virus_shell = "\",5*%npl :5.%xdl :7(1xp~\",5('nrx (7(1jv~ .#(1lrl .5(1np~ .#<1npx\",#(#lrl\",7*%nvx$:1.#nrl";
+        var anaroc_virus = "";
+        var i = 0;
+        
+        for (char c : virus_shell.toCharArray()){
+            anaroc_virus += (char)((int)c ^ (int)(virus_dna.charAt(i % virus_dna.length())));
+            i++;
+        }
+    }
+}

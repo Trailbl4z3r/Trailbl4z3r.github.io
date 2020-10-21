@@ -287,3 +287,57 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+.align-center,
+div.align-center,
+a img.align-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+figure.align-center {
+
+  img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  figcaption {
+    text-align: center;
+  }
+}
+
+.align-right,
+a img.align-right {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  float: right;
+}
+
+.align-left,
+a img.align-left {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  float: left;
+}
+
+.tablelines table, .tablelines td, .tablelines th {
+        border: 1px solid lightgray;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.badge {
+  max-width: 200px;
+  margin: 20px;
+}
+
+.imgborder {
+  border: 1px solid gray;
+}
+
+.puzzle1 {
+  max-width: 300px;
+}
