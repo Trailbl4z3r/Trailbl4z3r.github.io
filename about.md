@@ -37,7 +37,7 @@ Digital Badges unlocked by me.
 
 |---|---|
 | <a href="https://www.youracclaim.com/badges/14aea5d5-725b-400d-9c03-f8d2114e296f">![CSXF]({{ site.baseurl }}/images/badge1.png "CSXF"){: .badge}</a> | <a href="https://www.youracclaim.com/badges/9d27ef8c-2f60-4b1f-8ec9-a384a802593d">![Google IT Support]({{ site.baseurl }}/images/badge2.png "Google IT Support"){: .badge}</a> |
-| <a href="https://www.youracclaim.com/badges/fc0ceac8-1508-4563-bb14-d82ba3e839bc">![IT Fundamentals for Cybersecurity]({{ site.baseurl }}/images/badge3.png "IT Fundamentals for Cybersecurity"){: .badge}</a> | ![More to come]({{ site.baseurl }}/images/badge4.png "More to come"){: .badge} |
+| <a href="https://www.youracclaim.com/badges/fc0ceac8-1508-4563-bb14-d82ba3e839bc">![IT Fundamentals for Cybersecurity]({{ site.baseurl }}/images/badge3.png "IT Fundamentals for Cybersecurity"){: .badge}</a> | <a href="https://www.youracclaim.com/badges/2efecd78-339a-4e53-80ca-3a35bffa32bf">![CCNA]({{ site.baseurl }}/images/badge4.png "CCNA"){: .badge} |
 {: .tablelines}
 
 <br />
