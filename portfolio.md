@@ -23,6 +23,15 @@ This website contains challenges from local CTF competitions that were participa
 
 URL : <https://trailbl4z3r.site/> (Registration is only allowed for TAR UC domain's emails, please contact me for more information)
 
+---
+### TAR UC Minipage in Hack The Box
+
+TAR UC is now one of the universities enrolled in Hack The Box platform. Students using the platform can join the minipage to discover other students that are also hacking in the platform! PM me if you are one of the students in TAR UC and would like to join the page! Alumni are also accepted.
+
+![Hack The Box]({{ site.baseurl }}/images/htb.PNG "Hack The Box"){: .imgborder}
+
+URL : <https://www.hackthebox.eu/home/universities/profile/468> (Hack The Box account needed to view page)
+
 ----
 ### Hall of Fame for IGS
 
