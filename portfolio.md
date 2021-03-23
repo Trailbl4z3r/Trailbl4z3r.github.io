@@ -21,7 +21,7 @@ This website contains challenges from local CTF competitions that were participa
 
 ![Project:CyberSec PYQ Repo]({{ site.baseurl }}/images/pyq.PNG "Project:CyberSec PYQ Repo"){: .imgborder}
 
-URL : <https://trailbl4z3r.site/> (Registration is only allowed for TAR UC domain's emails, please contact me for more information)
+URL : (Currently under renovation, new version incoming)
 
 ---
 ### TAR UC Minipage in Hack The Box
